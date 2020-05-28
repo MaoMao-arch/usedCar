@@ -1,0 +1,22 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.searchOut .van-search {
+  padding-left: 0rpx !important;
+}
+
+.cataDivider .van-divider {
+  margin-bottom: 0px
+}
+
+page {
+  height: 100%;
+}

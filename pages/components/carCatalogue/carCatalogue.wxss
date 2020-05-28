@@ -1,0 +1,26 @@
+/* pages/components/carCatalogue/carCatalogue.wxss */
+.tag {
+  padding-right: 5px
+}
+
+.title {
+  font-weight: bold;
+  font-family: 'Microsoft YaHei', 'YouYuan', Arial, Helvetica, sans-serif;
+}
+
+.imgCata {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.textDesc {
+  font-size: 14px;
+  color: #8b8b8b;
+}
+
+.priceDesc {
+  font-weight: bold;
+  font-family: 'Microsoft YaHei', 'YouYuan', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #ff3c3c;
+}

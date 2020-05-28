@@ -1,0 +1,11 @@
+<!--pages/components/tabBar/tabBar.wxml-->
+<!-- 切换菜单 -->
+<view>
+	<van-tabbar active="{{ activeTarBar }}" bind:change="onChangeTarBar" active-color="#07c160" inactive-color="#000">
+		<van-tabbar-item wx:for="{{ list }}" wx:key="index">
+			<van-icon slot="icon" name="{{ item.iconI.normal }}" size="25px" />
+			<van-icon slot="icon-active" name="{{ item.iconI.active }}" size="26px" />
+			{{item.text}}
+		</van-tabbar-item>
+	</van-tabbar>
+</view>

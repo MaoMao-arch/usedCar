@@ -1,0 +1,16 @@
+/**index.wxss**/
+.search {
+  position: absolute;
+  z-index: 2;
+}
+
+.dropSearch {
+  position: fixed;
+  z-index: 2;
+  background-color: #ffffff;
+}
+
+.swipe {
+  position: relative;
+  z-index: 1;
+}

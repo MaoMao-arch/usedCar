@@ -1,0 +1,14 @@
+<!--pages/components/dropSearch/dropSearch.wxml-->
+<view>
+	<van-row>
+		<van-col span="4">
+			<view>
+				<text style="color: #434343" class="local-text">{{local}}</text>
+				<van-icon style="color: #434343" name="arrow-down" />
+			</view>
+		</van-col>
+		<van-col span="20">
+			<van-search style="height:100%;" background="NULL" class="searchOut" shape="round" bind:change="onChangeSearch" model:value="{{searchValue}}" input-align="center" placeholder="请输入搜索关键词" />
+		</van-col>
+	</van-row>
+</view>

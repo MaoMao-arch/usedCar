@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" style="height: 100%;" upper-threshold="54px" bindscroll="scroll">
+	<view>
+		<van-row>
+			<van-col span="24">
+				<search class="search" style="width:100%;"></search>
+				<van-transition naame="fade-down" duration="{{ { enter: 300, leave: 0 } }}" show="{{ searchHidden }}" custom-class="block">
+					<view>
+						<dropSearch class="dropSearch" style="width:100%;"></dropSearch>
+					</view>
+				</van-transition>
+
+				<swipe class="swipe"></swipe>
+			</van-col>
+			<van-col span="24">
+				<view style="width:100%;height:10px;background-color:#ffffff"></view>
+				<dropDown style="width:100%;"></dropDown>
+				<view style="width:100%;height:10px;background-color:#d9d9d9"></view>
+			</van-col>
+			<van-col span="24">
+				<carCatalogue style="width:100%;"></carCatalogue>
+			</van-col>
+		</van-row>
+	</view>
+</scroll-view>

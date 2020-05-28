@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "search": "/pages/components/search/search",
+    "swipe": "/pages/components/swipe/swipe",
+    "carCatalogue": "/pages/components/carCatalogue/carCatalogue",
+    "dropDown": "/pages/components/dropDown/dropDown",
+    "dropSearch": "/pages/components/dropSearch/dropSearch"
+  }
+}

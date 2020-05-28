@@ -1,0 +1,23 @@
+<!--pages/components/carCatalogue/carCatalogue.wxml-->
+<block>
+	<view wx:for="{{carCatalogue}}" wx:key="*this" style="padding:20rpx;">
+		<van-row>
+			<van-col span="10">
+				<image src="{{item.src}}" mode="widthFix" class="imgCata" />
+			</van-col>
+			<van-col span="14">
+				<view style="padding-left:5px;">
+					<van-tag class="tag" color="#00d7c5">{{item.sign}}</van-tag>
+					<text class="title">{{item.title}}</text>
+				</view>
+				<view style="padding-left:5px;margin-top:5px;margin-bottom:5px;">
+					<text class="textDesc">{{item.age}}|{{item.mileage}}</text>
+				</view>
+				<view style="padding-left:5px;">
+					<text class="priceDesc">{{item.price}}</text>
+				</view>
+			</van-col>
+		</van-row>
+		<van-divider class="cataDivider" />
+	</view>
+</block>
