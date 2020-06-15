@@ -1,2 +1,2 @@
 <!--pages/sellCar/sellCar.wxml-->
-<text>卖车</text>
+<van-button type="primary" bind:click="testConnect">连接测试</van-button>

@@ -1,3 +1,6 @@
+import {
+  $http
+} from "../../container/config/https"
 // pages/sellCar/sellCar.js
 const app = getApp()
 Page({
@@ -5,8 +8,7 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-  },
+  data: {},
 
   /**
    * 生命周期函数--监听页面加载
@@ -65,6 +67,20 @@ Page({
   },
 
   onShow() {
-		this.getTabBar().init();
-	},
+    this.getTabBar().init();
+  },
+
+  //连接测试
+  testConnect: function() {
+    let data = {
+      code: "1309501184",
+      name: 'wzl'
+    };
+    $http.get(this,{
+      data:data,
+      success: function(res){
+        console.log(res)
+      }
+    })
+  }
 })
