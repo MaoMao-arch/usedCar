@@ -4,6 +4,7 @@
     "swipe": "/pages/components/swipe/swipe",
     "carCatalogue": "/pages/components/carCatalogue/carCatalogue",
     "dropDown": "/pages/components/dropDown/dropDown",
-    "dropSearch": "/pages/components/dropSearch/dropSearch"
+    "dropSearch": "/pages/components/dropSearch/dropSearch",
+    "searchPage": "/pages/components/searchPage/searchPage"
   }
 }

@@ -1,0 +1,9 @@
+<!-- 遮罩层搜索页面 -->
+<view class="searchWrapper">
+	<van-search model:value="{{ searchValue }}" bind:change="onSearchChange" placeholder="请输入搜索关键词" show-action="{{showAction}}" use-action-slot="{{useActionSlot}}" bind:search="onSearch" bind:cancel="onSearchCancel">
+		<view slot="action" bind:tap="onSearch">搜索</view>
+	</van-search>
+</view>
+<view class="wrapper">
+
+</view>

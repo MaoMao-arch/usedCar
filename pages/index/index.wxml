@@ -24,14 +24,7 @@
 			</van-col>
 			<!-- 遮罩层 -->
 			<van-overlay show="{{ searchPageShow }}" z-index="12" duration="0.1">
-				<view class="searchWrapper">
-					<van-search model:value="{{ searchValue }}" bind:change="onSearchChange" placeholder="请输入搜索关键词" show-action="{{showAction}}" use-action-slot="{{useActionSlot}}" bind:search="onSearch" bind:cancel="onSearchCancel">
-						<view slot="action" bind:tap="onSearch">搜索</view>
-					</van-search>
-				</view>
-				<view class="wrapper">
-					
-				</view>
+				<searchPage bind:changeOverlayShow="changeOverlayShow"></searchPage>
 			</van-overlay>
 		</van-row>
 	</view>
