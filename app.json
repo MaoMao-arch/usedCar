@@ -46,7 +46,8 @@
     "van-tabbar": "@vant/weapp/tabbar/index",
     "van-tabbar-item": "@vant/weapp/tabbar-item/index",
     "van-transition": "@vant/weapp/transition/index",
-    "van-button": "@vant/weapp/button/index"
+    "van-button": "@vant/weapp/button/index",
+    "van-overlay": "@vant/weapp/overlay/index"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -8,7 +8,7 @@
 			</view>
 		</van-col>
 		<van-col span="20">
-			<van-search style="height:100%;" background="NULL" class="searchOut" shape="round" bind:change="onChangeSearch" model:value="{{searchValue}}" input-align="center" placeholder="请输入搜索关键词" />
+			<van-search style="height:100%;" background="NULL" class="searchOut" shape="round" bind:change="onChangeSearch" model:value="{{searchValue}}" input-align="center" bind:focus="focusSearch" placeholder="请输入搜索关键词" />
 		</van-col>
 	</van-row>
 </view>

@@ -19,15 +19,19 @@ Component({
    */
   data: {
     local: app.globalData.local,
-    searchValue: ""
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    onChangeSearch(e) {
-      app.globalData.searchValue = e.detail;  //修改全局地点变量
-    },
+    //搜索框聚焦
+    focusSearch() {
+      //传值给父组件
+      const status = true
+      this.triggerEvent("changeOverlayShow", {
+        status
+      })
+    }
   }
 })

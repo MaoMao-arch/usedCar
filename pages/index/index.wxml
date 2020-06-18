@@ -2,24 +2,35 @@
 <scroll-view scroll-y="true" style="height: 100%;" upper-threshold="54px" bindscroll="scroll">
 	<view>
 		<van-row>
+			<!-- 搜索框及轮播 -->
 			<van-col span="24">
-				<search class="search" style="width:100%;"></search>
+				<search class="search" style="width:100%;" bind:changeOverlayShow="changeOverlayShow"></search>
 				<van-transition naame="fade-down" duration="{{ { enter: 300, leave: 0 } }}" show="{{ searchHidden }}" custom-class="block">
 					<view>
-						<dropSearch class="dropSearch" style="width:100%;"></dropSearch>
+						<dropSearch class="dropSearch" style="width:100%;" bind:changeOverlayShow="changeOverlayShow"></dropSearch>
 					</view>
 				</van-transition>
-
 				<swipe class="swipe"></swipe>
 			</van-col>
+			<!-- 搜索选项 -->
 			<van-col span="24">
 				<view style="width:100%;height:10px;background-color:#ffffff"></view>
 				<dropDown style="width:100%;"></dropDown>
 				<view style="width:100%;height:10px;background-color:#d9d9d9"></view>
 			</van-col>
+			<!-- 商品列表 -->
 			<van-col span="24">
 				<carCatalogue style="width:100%;"></carCatalogue>
 			</van-col>
+			<!-- 遮罩层 -->
+			<van-overlay show="{{ searchPageShow }}" z-index="12" duration="0.1">
+				<view class="searchWrapper">
+					<van-search placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:cancel="onSearchCancel" />
+				</view>
+				<view class="wrapper">
+					
+				</view>
+			</van-overlay>
 		</van-row>
 	</view>
 </scroll-view>
